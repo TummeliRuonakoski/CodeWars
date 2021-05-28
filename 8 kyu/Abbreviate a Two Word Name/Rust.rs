@@ -1,5 +1,5 @@
 fn abbrev_name(name: &str) -> String {
-     name.split(" ").map(|i| i[0..1].to_uppercase()).collect::<Vec<_>>().join(".")
+    name.split_whitespace().map(|i| i[0..1].to_uppercase()).collect::<Vec<_>>().join(".")
 }
 
 // Rust test example:
