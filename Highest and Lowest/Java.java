@@ -3,15 +3,18 @@
 import java.util.*;
 public class Kata {
   public static String highAndLow(String numbers) {
+     
+   int max = Arrays.stream(numbers.split(" "))
+                    .mapToInt(i -> Integer.parseInt(i))
+                    .max()
+                    .getAsInt();
+    
    int min = Arrays.stream(numbers.split(" "))
                     .mapToInt(i -> Integer.parseInt(i))
                     .min()
                     .getAsInt();
 
-    int max = Arrays.stream(numbers.split(" "))
-                    .mapToInt(i -> Integer.parseInt(i))
-                    .max()
-                    .getAsInt();
+  
 
     return String.format("%d %d", max, min); }
 }
