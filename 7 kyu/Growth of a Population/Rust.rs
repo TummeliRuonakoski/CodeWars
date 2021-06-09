@@ -6,7 +6,7 @@ fn nb_year(p0: i32, percent: f64, aug: i32, p: i32)-> i32 {
     
     while j < p {
         i += 1;
-        j += (j as f64 * (percent / 100f64)) as i32 + aug;
+        j += (j as f64 * (percent / 100.0)) as i32 + aug;
     }
     i
 }
