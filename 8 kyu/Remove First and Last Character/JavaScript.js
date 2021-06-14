@@ -3,6 +3,13 @@ return str.substring(1, str.length - 1);
 
 }
 
+function removeChar(str){
+  return str.slice(1, str.length - 1);
+
+}
+
+
+
 const chai = require("chai");
 const assert = chai.assert;
 chai.config.truncateThreshold=0;
