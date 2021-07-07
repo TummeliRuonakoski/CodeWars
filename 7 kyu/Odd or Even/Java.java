@@ -10,6 +10,19 @@ public class Codewars {
 }
 
 
+
+import java.util.*;
+public class Codewars {
+  public static String oddOrEven (int[] array) {
+   return Arrays.stream(array).sum() % 2 == 0 ? "even" : "odd";
+  }
+}
+
+
+
+
+
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
