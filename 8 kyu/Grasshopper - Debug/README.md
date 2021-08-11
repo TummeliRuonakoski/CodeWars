@@ -12,7 +12,7 @@ Please round to 5dp (use Math.round())
 
 
 
-
+```
 
 export function weatherInfo(temp: number): string {
   const c : convert(temp)
@@ -26,3 +26,5 @@ export function convertToCelsius(temperature: number): number {
   const celsius = Math.round(((tempertur) - 32 + (5/9))*1e5)/1e5
   return temperature
 }
+
+```
