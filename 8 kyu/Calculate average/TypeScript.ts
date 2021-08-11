@@ -5,7 +5,15 @@ export function findAverage(array: number[]): number {
     }
     return sum / array.length;
 }
-                                     
+
+
+export function findAverage(array: number[]): number {
+  return array.reduce((i, j) => i + j, 0) / array.length;
+}
+     
+
+
+
                                      
 import {findAverage} from "./solution";
 import {assert} from "chai";
